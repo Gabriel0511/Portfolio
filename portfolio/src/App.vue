@@ -751,7 +751,7 @@ const config = reactive({
 
   aboutHeading: "Sobre mí",
   aboutText:
-    "Soy desarrollador de software, recientemente graduado, con foco en el desarrollo de aplicaciones web orientadas a resolver problemas reales de gestión. Me especializo en la construcción de sistemas internos, APIs REST y aplicaciones web orientadas a procesos de negocio.",
+    "Soy desarrollador Full-Stack especializado en crear herramientas que optimizan la gestión de negocios. Tengo experiencia trabajando mano a mano con emprendimientos reales, traduciendo necesidades operativas en sistemas web robustos y escalables.",
   aboutExtra:
     "Disfruto trabajar en proyectos donde el software tiene impacto directo en la operación diaria y ayuda a mejorar procesos reales.",
 
