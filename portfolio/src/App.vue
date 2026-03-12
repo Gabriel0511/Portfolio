@@ -743,7 +743,6 @@ const appWrapper = ref(null);
 const mobileNavOpen = ref(false);
 
 const config = reactive({
-  // ====== REEMPLAZÁ ACÁ TU INFO ======
   heroName: "Gabriel Casas",
   heroTitle: "Full-Stack Developer",
   heroTagline:
