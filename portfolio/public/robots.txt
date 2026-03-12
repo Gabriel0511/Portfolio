@@ -1,0 +1,9 @@
+# Permitir que todos los robots rastreen el sitio
+User-agent: *
+Allow: /
+
+# Evitar que rastreen carpetas de configuración (si las tuvieras)
+Disallow: /private/
+
+# Ruta a tu mapa del sitio (reemplazalo por tu URL real)
+Sitemap: https://gabrieldev.com.ar/sitemap.xml
