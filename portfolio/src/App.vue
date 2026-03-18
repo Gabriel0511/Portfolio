@@ -91,6 +91,8 @@
         </nav>
       </header>
 
+      <WhatsappButton />
+
       <!-- Mobile Nav Overlay -->
       <div
         class="mobile-nav fixed inset-0 z-50 flex flex-col items-center justify-center gap-8"
@@ -738,6 +740,7 @@ import {
   ref,
   nextTick,
 } from "vue";
+import WhatsappButton from "./components/WhatsappButton.vue";
 
 const appWrapper = ref(null);
 const mobileNavOpen = ref(false);
