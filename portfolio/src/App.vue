@@ -780,6 +780,48 @@ const config = reactive({
 
 const projects = reactive([
   {
+    title: "Gym Power — Landing Page Informativa",
+    description:
+      "Sitio web diseñado para maximizar la conversión de nuevos socios. Presentación estratégica de planes, grilla de horarios interactiva y geolocalización. Optimizada para una navegación rápida y una comunicación clara de los servicios del gimnasio.",
+    tags: ["Vue 3", "Vite", "Responsive Design", "Local SEO"],
+    accent: "var(--accent)",
+    tagStyle: {
+      background: "rgba(74, 222, 128, 0.08)",
+      color: "var(--accent)",
+    },
+    image: "/img/gym-demo.png",
+    visualLabel: "LANDING PAGE",
+    visualStyle: {
+      background:
+        "linear-gradient(135deg, rgba(74, 222, 128, 0.05), rgba(99, 102, 241, 0.05))",
+      minHeight: "220px",
+    },
+    liveUrl: "https://stirring-starburst-c66fed.netlify.app/",
+    repoUrl: "https://github.com/Gabriel0511/LandingGymDemo",
+    reverseOnDesktop: false,
+  },
+  {
+    title: "Guada — Portfolio Web & Personal Branding",
+    description:
+      "Transformación de un diseño de Canva en una experiencia web fluida para creadores de contenido. Enfoque en estética visual, optimización de carga y enlaces estratégicos de conversión para marcas personales.",
+    tags: ["Vue 3", "Animaciones", "Responsive", "Personal Brand"],
+    accent: "var(--accent2)",
+    tagStyle: {
+      background: "rgba(99, 102, 241, 0.08)",
+      color: "var(--accent2)",
+    },
+    image: "/img/guada-demo.png",
+    visualLabel: "MARCA PERSONAL",
+    visualStyle: {
+      background:
+        "linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(74, 222, 128, 0.05))",
+      minHeight: "220px",
+    },
+    liveUrl: "https://guadabustamante.netlify.app/",
+    repoUrl: "https://github.com/Gabriel0511/PortfolioInfluencer",
+    reverseOnDesktop: true,
+  },
+  {
     title:
       "Alma Pastelería — Sistema de gestión interna (Tesis / Cliente real)",
     description:
@@ -820,48 +862,6 @@ const projects = reactive([
     },
     liveUrl: "https://merakii.com.ar/",
     repoUrl: "", // cuando lo subas
-    reverseOnDesktop: true,
-  },
-  {
-    title: "Landing profesional — Estudio contable",
-    description:
-      "Landing page institucional orientada a presentación de servicios y contacto. Diseño claro, responsive y preparada para campañas de captación.",
-    tags: ["Vue 3", "Vite", "Landing", "Responsive"],
-    accent: "var(--accent)",
-    tagStyle: {
-      background: "rgba(74, 222, 128, 0.08)",
-      color: "var(--accent)",
-    },
-    image: "/img/landing-demo.png",
-    visualLabel: "LANDING",
-    visualStyle: {
-      background:
-        "linear-gradient(135deg, rgba(74, 222, 128, 0.05), rgba(99, 102, 241, 0.05))",
-      minHeight: "220px",
-    },
-    liveUrl: "https://spiffy-lokum-e1aeea.netlify.app/",
-    repoUrl: "",
-    reverseOnDesktop: false,
-  },
-  {
-    title: "Sistema de matrículas — Instituto (Proyecto académico)",
-    description:
-      "Frontend para gestión de matrículas: flujo de inscripción, validaciones y pantallas administrativas. Proyecto académico (sin persistencia de datos).",
-    tags: ["Vue 3", "Vite", "Frontend"],
-    accent: "var(--accent2)",
-    tagStyle: {
-      background: "rgba(99, 102, 241, 0.08)",
-      color: "var(--accent2)",
-    },
-    image: "/img/matricula-demo.png",
-    visualLabel: "FRONTEND",
-    visualStyle: {
-      background:
-        "linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(74, 222, 128, 0.05))",
-      minHeight: "220px",
-    },
-    liveUrl: "https://gestionitsc.netlify.app/",
-    repoUrl: "",
     reverseOnDesktop: true,
   },
 ]);
