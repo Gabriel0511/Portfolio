@@ -839,7 +839,7 @@ const projects = reactive([
         "linear-gradient(135deg, rgba(74, 222, 128, 0.05), rgba(99, 102, 241, 0.05))",
       minHeight: "220px",
     },
-    liveUrl: "https://comforting-maamoul-b375a3.netlify.app", // si algún día lo deployás, lo ponés acá
+    liveUrl: "https://comforting-maamoul-b375a3.netlify.app",
     repoUrl: "https://github.com/Gabriel0511/almaPasteleria",
     reverseOnDesktop: false,
   },
@@ -861,7 +861,7 @@ const projects = reactive([
       minHeight: "220px",
     },
     liveUrl: "https://merakii.com.ar/",
-    repoUrl: "", // cuando lo subas
+    repoUrl: "",
     reverseOnDesktop: true,
   },
 ]);
