@@ -780,7 +780,7 @@ const projects = reactive([
     title:
       "Alma Pastelería — Sistema de gestión interna (Tesis / Cliente real)",
     description:
-      "Sistema web full-stack para una pastelería real. Incluye gestión de insumos, recetas y pedidos, control de stock mínimo y reportes operativos para seguimiento diario.",
+      "Sistema web full-stack para una pastelería real. Incluye gestión de insumos, recetas y pedidos, control de stock mínimo y reportes operativos para seguimiento diario. Usar credenciales de prueba: demo@almapasteleria.com / demo1234",
     tags: ["Vue 3", "Vite", "Django", "DRF", "PostgreSQL"],
     accent: "var(--accent)",
     tagStyle: {
