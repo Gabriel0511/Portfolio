@@ -40,6 +40,13 @@
             <a
               class="nav-link font-mono text-sm"
               :style="navLinkStyle"
+              href="#services"
+              @click.prevent="scrollToSection('services')"
+              >services</a
+            >
+            <a
+              class="nav-link font-mono text-sm"
+              :style="navLinkStyle"
               href="#projects"
               @click.prevent="scrollToSection('projects')"
               >work</a
@@ -122,6 +129,13 @@
           href="#about"
           @click.prevent="mobileGo('about')"
           >about</a
+        >
+        <a
+          class="font-mono text-xl"
+          :style="mobileLinkStyle"
+          href="#services"
+          @click.prevent="mobileGo('services')"
+          >services</a
         >
         <a
           class="font-mono text-xl"
@@ -282,6 +296,81 @@
           </div>
         </section>
 
+        <!-- Services -->
+        <section
+          id="services"
+          style="
+            padding: 100px 24px;
+            border-top: 1px solid rgba(74, 222, 128, 0.06);
+          "
+        >
+          <div class="max-w-5xl mx-auto">
+            <div class="flex items-center gap-4 mb-12 reveal">
+              <span
+                class="font-mono text-sm"
+                :style="{ color: 'var(--accent)' }"
+                >02.</span
+              >
+              <h2 class="text-2xl md:text-3xl font-bold">
+                {{ config.servicesHeading }}
+              </h2>
+              <span
+                style="
+                  display: block;
+                  flex: 1;
+                  max-width: 200px;
+                  height: 1px;
+                  background: rgba(74, 222, 128, 0.15);
+                "
+              ></span>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div
+                v-for="(s, i) in services"
+                :key="s.title"
+                class="glow-border rounded-xl p-6 reveal"
+                :class="`reveal-delay-${i + 1}`"
+                :style="{ background: 'var(--surface)' }"
+              >
+                <h3
+                  class="text-lg font-bold mb-3"
+                  :style="{ color: s.accent }"
+                >
+                  {{ s.title }}
+                </h3>
+                <p
+                  class="text-sm mb-3"
+                  style="opacity: 0.8; line-height: 1.7"
+                >
+                  {{ s.subtitle }}
+                </p>
+                <p
+                  class="text-sm"
+                  style="opacity: 0.6; line-height: 1.7"
+                >
+                  {{ s.description }}
+                </p>
+              </div>
+            </div>
+
+            <div class="text-center mt-12 reveal reveal-delay-5">
+              <a
+                href="#contact"
+                class="cta-btn font-mono text-sm font-medium px-8 py-3 rounded-lg inline-block"
+                :style="{
+                  background: 'var(--accent)',
+                  color: 'var(--bg)',
+                  textDecoration: 'none',
+                }"
+                @click.prevent="scrollToSection('contact')"
+              >
+                Solicitar presupuesto →
+              </a>
+            </div>
+          </div>
+        </section>
+
         <!-- Projects -->
         <section
           id="projects"
@@ -295,7 +384,7 @@
               <span
                 class="font-mono text-sm"
                 :style="{ color: 'var(--accent)' }"
-                >02.</span
+                >03.</span
               >
               <h2 class="text-2xl md:text-3xl font-bold">
                 {{ config.projectsHeading }}
@@ -410,7 +499,7 @@
               <span
                 class="font-mono text-sm"
                 :style="{ color: 'var(--accent)' }"
-                >03.</span
+                >04.</span
               >
               <h2 class="text-2xl md:text-3xl font-bold">
                 {{ config.skillsHeading }}
@@ -573,7 +662,7 @@
               <span
                 class="font-mono text-sm"
                 :style="{ color: 'var(--accent)' }"
-                >04.</span
+                >05.</span
               >
               <h2 class="text-2xl md:text-3xl font-bold">
                 {{ config.contactHeading }}
@@ -770,6 +859,7 @@ const config = reactive({
   ],
 
   projectsHeading: "Proyectos destacados",
+  servicesHeading: "Servicios",
   skillsHeading: "Habilidades",
 
   contactHeading: "¿Trabajamos juntos?",
@@ -863,6 +953,33 @@ const projects = reactive([
     liveUrl: "https://merakii.com.ar/",
     repoUrl: "",
     reverseOnDesktop: true,
+  },
+]);
+
+const services = reactive([
+  {
+    title: "Desarrollo Web para Negocios",
+    subtitle: "Diseño páginas web modernas, rápidas y optimizadas para atraer clientes.",
+    description: "Cada sitio está pensado para verse perfecto en celulares, cargar rápido y posicionarse en Google. No es solo una web, es una herramienta para generar ingresos.",
+    accent: "var(--accent)",
+  },
+  {
+    title: "Aplicaciones Web a Medida",
+    subtitle: "Creo sistemas personalizados para digitalizar y simplificar tu negocio.",
+    description: "Desde gestión de turnos hasta control de clientes o procesos internos, todo adaptado a lo que realmente necesitás. Si tu negocio tiene un problema repetitivo, lo convertimos en una solución automática.",
+    accent: "var(--accent2)",
+  },
+  {
+    title: "Consultoría y Mantenimiento Técnico",
+    subtitle: "Me encargo de que tu web funcione siempre bien, sin que tengas que preocuparte.",
+    description: "Optimización, soporte técnico y mejoras continuas para que todo esté siempre online y funcionando. Vos te enfocás en tu negocio, yo me encargo de lo técnico.",
+    accent: "var(--accent)",
+  },
+  {
+    title: "Integraciones y Automatización",
+    subtitle: "Conecto tu web con herramientas que te ahorran tiempo y generan más ventas.",
+    description: "WhatsApp, pagos online, formularios automáticos y más. Menos tareas manuales, más tiempo y mejores resultados.",
+    accent: "var(--accent2)",
   },
 ]);
 
